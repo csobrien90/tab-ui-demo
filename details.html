@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tab User Interface Demo</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Tab User Interface Demo</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="details.html">Details Accordian Example</a>
+			<a href="selection.html">Tabbed Selection Example</a>
+		</nav>
+	</header>
+	<main>
+		<h2>Details Accordian</h2>
+		<section>
+			<!-- ⬇️ Which tag should these buttons be wrapped in? ⬇️ -->
+			<button class="tab-button tab" aria-expanded="true" aria-controls="html-article">HTML</button>
+			<button class="tab-button tab" aria-expanded="false" aria-controls="css-article">CSS</button>
+			<button class="tab-button tab" aria-expanded="false" aria-controls="js-article">JavaScript</button>
+			<!-- ⬆️ What do you think? ⬆️ -->
+			<div class="details-wrapper">
+				<article id="html-article" class="details-article active">
+					<img src="https://picsum.photos/199/199">
+					<p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.</p>
+				</article>
+				<article id="css-article" class="details-article">
+					<img src="https://picsum.photos/200/200">
+					<p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.</p>
+				</article>
+				<article id="js-article" class="details-article">
+					<img src="https://picsum.photos/201/201">
+					<p>JavaScript is a lightweight programming language that web developers commonly use to create more dynamic interactions when developing web pages, applications, servers, and or even games.</p>
+				</article>
+			</div>
+		</section>
+	</main>
+	<script src="scripts.js"></script>
+</body>
+</html>
