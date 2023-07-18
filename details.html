@@ -9,19 +9,19 @@
 <body>
 	<header>
 		<h1>Tab User Interface Demo</h1>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="details.html">Details Accordian Example</a>
-			<a href="selection.html">Tabbed Selection Example</a>
+		<nav class="tab-wrap">
+			<a href="index.html" class="tab">Home</a>
+			<a href="details.html" class="tab">Details Accordian</a>
+			<a href="selection.html" class="tab">Tabbed Selection</a>
 		</nav>
 	</header>
 	<main>
 		<h2>Details Accordian</h2>
 		<section>
 			<!-- ⬇️ Which tag should these buttons be wrapped in? ⬇️ -->
-			<button class="tab-button tab" aria-expanded="true" aria-controls="html-article">HTML</button>
-			<button class="tab-button tab" aria-expanded="false" aria-controls="css-article">CSS</button>
-			<button class="tab-button tab" aria-expanded="false" aria-controls="js-article">JavaScript</button>
+			<button class="tab-button tab" aria-controls="html-article">HTML</button>
+			<button class="tab-button tab" aria-controls="css-article">CSS</button>
+			<button class="tab-button tab" aria-controls="js-article">JavaScript</button>
 			<!-- ⬆️ What do you think? ⬆️ -->
 			<div class="details-wrapper">
 				<article id="html-article" class="details-article active">

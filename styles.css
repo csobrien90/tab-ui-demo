@@ -1,5 +1,71 @@
+html {
+	--tan: #f2ee9d;
+	--pea: #7a9d54;
+	--forest: #557a46;
+	--brick: #8c3333;
+
+	background-color: #f2ee9d;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main, h1 {
+	padding: 0 1rem;
+}
+
+.tab-wrap, #shirt-color-form {
+	background-color: #557a46;
+	display: flex;
+	padding: .5rem;
+}
+
+.tab {
+	padding: 1rem;
+	background-color: #7a9d54;
+}
+
+a, button, label {
+	color: #f2ee9d;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+a:hover, button:hover, label:hover {
+	color: #8c3333;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 img {
 	max-width: 100%;
+}
+
+figure {
+	position: relative;
+	width: fit-content;
+}
+
+figcaption {
+	font-size: 1.2rem;
+	text-align: center;
+	position: absolute;
+	bottom: .5rem;
+	width: calc(100% - 1rem);
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.5rem;
+}
+
+button {
+	border: none;
 }
 
 .details-article {
@@ -8,6 +74,16 @@ img {
 
 .details-article.active {
 	display: block;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #f2ee9d;
 }
 
 svg#shirt {

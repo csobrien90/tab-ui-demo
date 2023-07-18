@@ -1,3 +1,5 @@
+// Details Accordian
+
 const buttonTabs = document.querySelectorAll('.tab-button')
 const allDetails = document.querySelectorAll('.details-article')
 
@@ -16,6 +18,8 @@ buttonTabs.forEach(button => {
 	})
 })
 
+
+// Shirt Color Selection
 
 const shirtColorInputs = document.querySelectorAll('input[name="shirt-color"]')
 const shirtSvg = document.querySelector('svg#shirt')
